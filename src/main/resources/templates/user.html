@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>User</title>
+</head>
+<body>
+    <header th:insert="blocks/header :: logout"></header>
+    <div class="container">
+        <p th:text="${user.toString()}">VALUE</p>
+        <h1>Congrats!!! You did it!</h1>
+        <h1>But you don't have enough admin rights</h1>
+    </div>
+</body>
+</html>
